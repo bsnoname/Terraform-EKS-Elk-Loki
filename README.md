@@ -19,3 +19,13 @@ Phần này sẽ được tích hợp trong file nén argocd-alepay-aws-release.
 2. Gitlab của dự án sẽ được deploy bằng cách sửa images trên file kustomization.yaml
 3. Sau khi sửa xong images, argocd sẽ thấy file có sự thay đổi và sẽ thực hiện deploy app mới với images vừa được sửa xong trên file kustomization.yaml
 4. Quá trình deploy được thực hiện một cách nhanh gọn
+
+
+argocd-alepay-aws/user-argocd
+Thư mục này chứa các user cần tạo cho argocd
+argocd-alepay-aws/cert-nganluong
+Thư mục này chứa các cert cần tạo cho argocd
+argocd-alepay-aws/filebeat
+Thư mục này chứa filebeat cho hệ thống elk. filebeat se đc deploy mount ổ efs và chuyển dữ liệu về cụm Elasticsearch
+argocd-alepay-aws/nginx
+Thư mục này chạy ingress cho hệ thống EKS
